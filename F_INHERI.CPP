@@ -1,3 +1,7 @@
+/*
+      First Program Of Inheritance 
+      =======Single Inheritance======
+*/
 #include<conio.h>
 #include<iostream.h>
 class College
