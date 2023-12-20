@@ -85,8 +85,10 @@ void main()
 {
 	int n;
 	char ch;
-	clrscr();
 	BOOK B[5];
+	clrscr();
+	while(ch!='#')
+	{
 	cout<<"\n # ) EXIT()";
 	cout<<"\n 1 ) GET_DATA()";
 	cout<<"\n 2 ) PUT_DATA()";
@@ -95,6 +97,7 @@ void main()
 	cout<<"\n Enter Your Choise :-";
 	ch = getch();
 	switch(ch)
+	{
 		case '1' :	cout<<"\n How Many Do You Want To Insert Data :-";
 						cin>>n;
 						for(int i=0; i<n; i++)
@@ -115,7 +118,9 @@ void main()
 		case '3' : 	B[0].Search(B,n);
 						break;
 
-		case '4' :	B.[0].Sort_Data(B,n);
+		case '4' :	B[0].Sort_Data(B,n);
 			break;
+			}
+	}
 
 }

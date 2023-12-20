@@ -23,8 +23,7 @@ class OpOver
 			y++;
 		}
 	}
-};
-void operator++()
+	void operator++()
 	{
 		cout<<"\n\n The Opratotr Over Loding Is Cass";
 		for(int i=0; i<8; i++)
@@ -33,15 +32,20 @@ void operator++()
 			y++;
 		}
 	}
+};
 void main()
 {
 	clrscr();
 
 	OpOver O;
-
 	O++; //Hear Oprator Over Loaded
-
 	O.Display();
 
+	DAR D(365);
+	MONTH M;
+
+	M = D;
+
+	M.Display();
 	getch();
 }
